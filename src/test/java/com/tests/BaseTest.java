@@ -1,6 +1,7 @@
 package com.tests;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
@@ -18,6 +19,9 @@ public class BaseTest {
     public void setupDriver(ITestContext ctx) throws MalformedURLException {
         // BROWSER => chrome / firefox
         // HUB_HOST => localhost / 10.0.1.3 / hostname
+
+//        System.setProperty("webdriver.chrome.driver", "C:\\Webdrivers\\chromedriver.exe");
+//        WebDriver driver = new ChromeDriver();
 
         String host = "localhost";
         DesiredCapabilities dc;
